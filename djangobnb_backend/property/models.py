@@ -13,7 +13,7 @@ class Property(models.Model):
     bathrooms = models.IntegerField()
     guests = models.IntegerField()
     country = models.CharField(max_length=255)
-    city_code = models.CharField(max_length=10)
+    country_code = models.CharField(max_length=10)
     category = models.CharField(max_length=255)
     #favorite
     image = models.ImageField(upload_to='uploads/properties/')
